@@ -78,6 +78,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 /* Reusable CSS Classes */
 .section {
     padding: 4rem 0 2rem;
@@ -106,4 +112,64 @@ img {
 .grid {
     display: grid;
     gap: 1.5rem;
+}
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+}
+.nav {
+    max-width: 1024px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo,
+.nav__list-link {
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+}
+.nav__logo:hover,
+.nav__list-link:hover {
+    color: var(--first-color);
+}
+.nav__toggle {
+    font-size: 1.15rem;
+}
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 1.5rem 0 1rem;
+        border-radius: 0 0 1rem 1rem;
+        box-shadow: 0 4px 4px hsla(0, 100%, 0%, 0.1);
+        transition: 0.4s;
+        z-index: var(--z-fixed);
+    }
+    .nav__list {
+        position: relative;
+        display: grid;
+        row-gap: 1rem;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+    .theme__button {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 1.15rem;
+    }
+}
+/* Show menu Styles */
+.show-menu {
+    top: var(--header-height);
 }
