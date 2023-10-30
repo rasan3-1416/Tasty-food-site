@@ -113,6 +113,21 @@ button {
     display: grid;
     gap: 1.5rem;
 }
+.main {
+    overflow: hidden;
+}
+/* Button Styles */
+.button-primary {
+    display: inline-flex;
+    color: #fff;
+    background-color: var(--first-color);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.button-primary:hover {
+    background-color: var(--first-color-alt);
+}
 /* Header */
 .header {
     position: fixed;
@@ -172,4 +187,22 @@ button {
 /* Show menu Styles */
 .show-menu {
     top: var(--header-height);
+}
+/* Home Section Styles */
+.home__container {
+    padding-top: 1.5rem;
+}
+.home__title {
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+.home__subtitle {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-4);
+}
+.home__img {
+    width: 300px;
+    justify-self: center;
 }
