@@ -141,6 +141,7 @@ button {
     width: 100%;
     background-color: var(--body-color);
     z-index: var(--z-fixed);
+    transition: 0.3s;
 }
 .nav {
     max-width: 1024px;
@@ -192,6 +193,10 @@ button {
 /* Show menu Styles */
 .show-menu {
     top: var(--header-height);
+}
+/* Scroll Header Styles */
+.scroll-header {
+    box-shadow: 0 4px 7px hsla(0, 100%, 0%, 0.1);
 }
 /* Home Section Styles */
 .home__container {
