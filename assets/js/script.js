@@ -18,12 +18,11 @@ navLink.forEach(currentButton => {
     currentButton.addEventListener('click', navToggleAction)
 })
 
-// Add Style On Scroll Feature
+// Add Style to Header On Scroll Feature
 const header = document.querySelector('.header')
 
 function scrollAction() {
-    scrollAmountY = window.scrollY
-    if(scrollAmountY > 50) {
+    if(this.scrollY >= 50) {
         header.classList.add('scroll-header')
     }else {
         header.classList.remove('scroll-header')
@@ -31,3 +30,25 @@ function scrollAction() {
 }
 
 window.addEventListener('scroll', scrollAction)
+
+// Scroll Active Section High lighter Feature
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActiveSection() {
+    const scrollAmountY = window.scrollY
+
+    sections.forEach(currentSection => {
+        const sectionHeight = currentSection.offsetHeight,
+              sectionTop = currentSection.offsetTop - 50,
+              sectionId = currentSection.getAttribute('id'),
+              scrolledSection = document.querySelector(`.nav__menu a[href*= ${sectionId}]`)
+
+        if(scrollAmountY > sectionTop && scrollAmountY <= sectionTop + sectionHeight) {
+            scrolledSection.classList.add('active-section')
+        }else {
+            scrolledSection.classList.remove('active-section')
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActiveSection)

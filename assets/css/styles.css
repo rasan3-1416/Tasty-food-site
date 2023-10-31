@@ -198,6 +198,10 @@ button {
 .scroll-header {
     box-shadow: 0 4px 7px hsla(0, 100%, 0%, 0.1);
 }
+/* Active Section Styles */
+.active-section {
+    color: var(--first-color);
+}
 /* Home Section Styles */
 .home__container {
     padding-top: 1.5rem;
