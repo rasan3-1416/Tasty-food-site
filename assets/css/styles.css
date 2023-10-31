@@ -296,3 +296,11 @@ button {
     width: 230px;
     justify-self: center;
 }
+/* Contact Styles */
+.contact__container {
+    text-align: center;
+    row-gap: 2.5rem;
+}
+.contact__button a {
+    display: inline-flex;
+}
