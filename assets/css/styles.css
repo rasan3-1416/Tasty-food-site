@@ -279,3 +279,20 @@ button {
     padding: 0.45rem 0.85rem;
     border-radius: 0.5rem 0 0.5rem 0;
 }
+/* App Section Styles */
+.app__data {
+    text-align: center;
+}
+.app__description {
+    margin-bottom: var(--mb-4);
+}
+.app__store {
+    padding-bottom: 2rem;
+}
+.app__store img {
+    width: 140px;
+}
+.app__img {
+    width: 230px;
+    justify-self: center;
+}
