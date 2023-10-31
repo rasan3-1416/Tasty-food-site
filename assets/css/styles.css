@@ -223,3 +223,17 @@ button {
     border-radius: 0.5rem;
     justify-self: center;
 }
+/* Services Section Style */
+.services__container {
+    row-gap: 3rem;
+    padding-top: 1.5rem;
+}
+.services__content {
+    text-align: center;
+}
+.services__img {
+    width: 64px;
+    height: 64px;
+    fill: var(--first-color);
+    margin-bottom: mb-3;
+}
