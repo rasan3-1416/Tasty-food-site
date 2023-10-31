@@ -49,6 +49,8 @@
 /* Base Styling */
 *,*::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html {
     scroll-behavior: smooth;
@@ -103,11 +105,14 @@ button {
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1);
 }
+.description {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
 .container {
     max-width: 960px;
-    width: calc(100% - 2rem);
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
 }
 .grid {
     display: grid;
@@ -204,5 +209,17 @@ button {
 }
 .home__img {
     width: 300px;
+    justify-self: center;
+}
+/* About Section Styles */
+.about__data {
+    text-align: center;
+}
+.about__description {
+    margin-bottom: var(--mb-3);
+}
+.about__img {
+    width: 280px;
+    border-radius: 0.5rem;
     justify-self: center;
 }
