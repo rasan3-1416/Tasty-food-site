@@ -237,3 +237,45 @@ button {
     fill: var(--first-color);
     margin-bottom: mb-3;
 }
+/* Menu Section Styles */
+.menu__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+.menu__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    padding: 1.25rem 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 7px hsla(0, 100%, 0%, 0.1);
+}
+.menu__content-img {
+    width: 100px;
+    align-self: center;
+    margin-bottom: var(--mb-2);
+}
+.menu__content-name,
+.menu__content-price {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+.menu__content-name {
+    font-size: var(--normal-font-size);
+}
+.menu__content-details {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+.menu__content-price {
+    font-size: var(--small-font-size);
+}
+.menu__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: 0.45rem 0.85rem;
+    border-radius: 0.5rem 0 0.5rem 0;
+}
