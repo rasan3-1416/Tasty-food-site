@@ -367,3 +367,26 @@ body.dark-theme {
     padding-top: 3.5rem;
     font-size: var(--small-font-size);
 }
+/* Scroll Up styles */
+.scroll__up {
+    position: fixed;
+    right: 1.5rem;
+    bottom: -100%;
+    background-color: var(--first-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.scroll__up:hover {
+    opacity: 1;
+}
+.scroll__up i {
+    font-size: 1rem;
+    font-weight: var(--font-semi-bold);
+    color: var(--body-color);
+}
+/* Show Scroll Styles */
+.show-scroll {
+    bottom: 1.5rem;
+}

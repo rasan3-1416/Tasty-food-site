@@ -84,3 +84,16 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+//Scroll UP Feature
+const scrollUpButton = document.getElementById('scroll-up')
+
+function scrollUpAction() {
+    if(this.scrollY > 350) {
+        scrollUpButton.classList.add('show-scroll')
+    }else {
+        scrollUpButton.classList.remove('show-scroll')
+    }
+}
+
+window.addEventListener('scroll', scrollUpAction)
