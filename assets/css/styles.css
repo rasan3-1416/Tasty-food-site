@@ -191,14 +191,17 @@ body.dark-theme {
         justify-content: center;
         padding-bottom: 1.5rem;
     }
-    /* Theme button Styles */
+    /* Theme Button Position */
     .theme__button {
         position: absolute;
         top: 1rem;
         right: 1.5rem;
-        font-size: 1.15rem;
-        color: var(--text-color);
     }
+}
+/* Theme Button Styles */
+.theme__button {
+    font-size: 1.15rem;
+    color: var(--text-color);
 }
 /* Show menu Styles */
 .show-menu {
@@ -389,4 +392,142 @@ body.dark-theme {
 /* Show Scroll Styles */
 .show-scroll {
     bottom: 1.5rem;
+}
+/* Media Query Styles for small devices */
+@media screen and (max-width: 320px) {
+    /* Menu Styles */
+    .menu__container {
+        grid-template-columns: repeat(1, 180px);
+    }
+}
+/* Media Query Styles for Medium devices */
+@media screen and (min-width: 576px) {
+    /* Reusable Classes Styles */
+    .section {
+        padding: 6rem 0 3.5rem;
+    }
+    .section__title {
+        margin-bottom: var(--mb-4);
+    }
+    .contianer {
+        margin-left: var(--mb-3);
+        margin-right: var(--mb-3);
+    }
+    /* Home Styles */
+    .home__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 4rem 0 2.5rem;
+    }
+    .home__img {
+        width: 380px;
+    }
+    /* About Styles */
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .about__data,
+    .about__data .section__subtitle,
+    .about__data .section__title {
+        text-align: initial;
+    }
+    .about__img {
+        justify-self: flex-start;
+        width: 380px;
+        order: -1;
+    }
+    /* Services Styles */
+    .services__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    /* Menu Styles */
+    .menu__container {
+        grid-template-columns: repeat(2, 250px);
+        gap: 3.5rem;
+    }
+    /* App Styles */
+    .app__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .app__data,
+    .app__data .section__title,
+    .app__data .section__subtitle {
+        text-align: initial;
+    }
+    .app__store {
+        padding-bottom: 0;
+        display: flex;
+        column-gap: 1.5rem;
+    }
+    .app__img {
+        width: 380px;
+        justify-self: flex-end;
+    }
+    /* Contact Styles */
+    .contact__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .contact__content,
+    .contact__content .section__title,
+    .contact__content .section__subtitle {
+        text-align: initial;
+    }
+    .contact__button {
+        justify-self: flex-end;
+    }
+    /* Footer styles */
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 768px) {
+    /* Reusable Class Styles */
+    .container {
+        margin-left: var(--mb-4);
+        margin-right: var(--mb-4);
+    }
+    /* Header & Nav Styles */
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav__toggle {
+        display: none;
+    }
+    .nav__menu,
+    .nav__list {
+        display: flex;
+        column-gap: 1.5rem;
+    }
+    .theme__button {
+        font-size: 1.25rem;
+    }
+    /* Menu Styles */
+    .menu__container {
+        grid-template-columns: repeat(3, 220px);
+    }
+    /* Footer Styles */
+    .footer__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* Media Quary Styles For Large Devices */
+@media screen and (min-width: 960px){
+    /* Reusable Class Styles */
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Offer Styles */
+    .services__container {
+        grid-template-columns: repeat(3, 280px);
+        justify-content: space-between;
+    }
+    /* Footer Styles */
+    .footer__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
