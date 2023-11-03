@@ -1,0 +1,11 @@
+{
+  "name": "Tasty Food Website",
+  "version": "1.0.0",
+  "description": "- Food website version 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Md. Rakib Hasan <md.rakibhasan3.1416@gmail.com>",
+  "license": "ISC"
+}
