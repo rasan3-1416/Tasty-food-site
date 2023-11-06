@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Stlyes */
+@layer base {
+    :root {
+        --container: #ffffff,
+        --body: #fbfefd,
+        --first: #069d54,
+        --first-alt: #048654,
+        --title: #383838,
+        --prime: #707070,
+        --prime-light: #a6a6a6,
+    }
+    html {
+        @apply font-body;
+    }
+    body {
+        
+    }
+
+}
+
