@@ -17,6 +17,11 @@ module.exports = {
       fontFamily: {
         body: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
+      // Custom Shadow
+      dropShadow: {
+        '3xl': '0 4px 4px hsla(0, 100%, 0%, 0.1)',
+        '4xl': '0 4px 7px hsla(0, 100%, 0%, 0.1)',
+      },
       // Custom Index Value
       zIndex: {
         'tooltip': 10,

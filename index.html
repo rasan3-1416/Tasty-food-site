@@ -15,7 +15,7 @@
     <header class="fixed inset-x-0 w-full bg-body z-fixed ease-in-out" id="header">
         <nav class="container h-header flex justify-between items-center">
             <a class="text-prime font-medium ease-trans-in hover:text-first" href="#">Tasty</a>
-            <div class="fixed -top-full show-menu:top-[3rem] left-0 w-full bg-body pt-[1.5rem] pb-[1rem] rounded-b-2xl trans-ease md:block" id="nav-menu">
+            <div class="fixed -top-full show-menu:top-[3rem] left-0 w-full bg-body pt-[1.5rem] pb-[1rem] rounded-b-2xl drop-shadow-3xl trans-ease md:block" id="nav-menu">
                 <ul class="relative grid gap-y-4 justify-center pb-6">
                     <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section" href="#home">Home</a></li>
                     <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#about">About</a></li>
@@ -67,13 +67,13 @@
         <!-- End About Section -->
 
         <!-- Start Services Section -->
-        <section class="services section" id="services">
-            <span class="section__subtitle">Offering</span>
-            <h2 class="section__title">Our amazing services</h2>
-            <div class="services__container container grid">
+        <section class="section" id="services">
+            <span class="section-subtitle">Offering</span>
+            <h2 class="section-title">Our amazing services</h2>
+            <div class="container pt-6 grid gap-y-12">
                 <!-- Services - 1 -->
-                <div class="services__content">
-                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                <div class="text-center">
+                    <svg class="w-[68px] h-[68px] fill-first mb-6 inline-block" xmlns="http://www.w3.org/2000/svg">
                         <path d="M45.3205 21.5702L44.6357 19.3163C43.7659 16.756 40.9852 15.3857 38.4249 
                         16.2556C36.9847 16.7449 35.8536 17.876 35.3643 19.3163L34.6795 21.5702C34.1032 
                         23.471 33.9823 25.4807 34.3264 27.4368C34.6403 29.0838 35.6859 30.4987 37.168 
@@ -134,14 +134,14 @@
                         16.8875 47.057C17.3045 47.4744 17.9811 47.4746 18.3984 47.0576C18.8157 
                         46.6405 18.816 45.964 18.3989 45.5466Z"/>
                     </svg>
-                    <h3 class="services__title">Excellent food</h3>
+                    <h3 class="fs-md font-semibold mb-1">Excellent food</h3>
                     <p class="services__description description">
                         We offer our clients excellent quality services for many years, with the best and delicious food in the city.
                     </p>
                 </div>
                 <!-- Services - 2 -->
-                <div class="services__content">
-                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                <div class="text-center">
+                    <svg class="w-[68px] h-[68px] fill-first mb-6 inline-block" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
                         <path d="M55.82 22.0395C55.5475 21.5164 54.9027 21.3132 54.3795 21.5855L54.3794 
                         21.5857L49.4885 24.1283H49.481L32.1524 33.1455L38.0258 14.5397C38.0258 14.5323 
@@ -293,14 +293,14 @@
                         </clipPath>
                         </defs>
                     </svg>
-                    <h3 class="services__title">Fast food</h3>
+                    <h3 class="fs-md font-semibold mb-1">Fast food</h3>
                     <p class="services__description description">
                         We offer our clients excellent quality services for many years, with the best and delicious food in the city.
                     </p>
                 </div>
                 <!-- Services - 3 -->
-                <div class="services__content">
-                    <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                <div class="text-center">
+                    <svg class="w-[68px] h-[68px] fill-first mb-6 inline-block" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
                         <path d="M19.1978 49.6016C17.4308 49.6016 15.9981 51.0342 15.9981 52.8012C15.9981 54.5682 17.4308 
                         56.0008 19.1978 56.0008C20.9648 56.0008 22.3974 54.5682 22.3974 52.8012C22.3974 51.0342 20.9648 
@@ -351,7 +351,7 @@
                             </clipPath>
                             </defs>
                     </svg>
-                    <h3 class="services__title">Delivery</h3>
+                    <h3 class="fs-md font-semibold mb-1">Delivery</h3>
                     <p class="services__description description">
                         We offer our clients excellent quality services for many years, with the best and delicious food in the city.
                     </p>
@@ -361,37 +361,37 @@
         <!-- End Services Section -->
 
         <!-- Start Menu Section -->
-        <section class="menu section" id="menu">
-            <span class="section__subtitle">Special</span>
-            <h2 class="section__title">Menu of the week</h2>
-            <div class="menu__container container grid">
+        <section class="section" id="menu">
+            <span class="section-subtitle">Special</span>
+            <h2 class="section-title">Menu of the week</h2>
+            <div class="container grid grid-cols-2 justify-center gap-6">
                 <!-- Menu Content - 1 -->
-                <div class="menu__content">
-                    <img class="menu__content-img" src="./assets/img/plate1.png" alt="Menu Image">
-                    <h3 class="menu__content-name">Barbecue salad</h3>
-                    <span class="menu__content-details">Delicious dish</span>
-                    <span class="menu__content-price">$22.00</span>
-                    <a class="menu__button button-primary" href="#">
+                <div class="relative flex flex-col bg-container py-5 px-3 rounded-lg drop-shadow-4xl">
+                    <img class="w-[100px] self-center mb-4" src="./assets/img/plate1.png" alt="Menu Image">
+                    <h3 class="text-title font-bold">Barbecue salad</h3>
+                    <span class="fs-sm mb-2">Delicious dish</span>
+                    <span class="text-title fs-sm font-bold">$22.00</span>
+                    <a class="btn btn-prime absolute bottom-0 right-0 py-[0.45rem] px-[0.85rem] rounded-tr-none rounded-bl-none" href="#">
                         <i class="ri-shopping-cart-line"></i>
                     </a>
                 </div>
                 <!-- Menu Content - 2 -->
-                <div class="menu__content">
-                    <img class="menu__content-img" src="./assets/img/plate2.png" alt="Menu Image">
-                    <h3 class="menu__content-name">Salad with fish</h3>
-                    <span class="menu__content-details">Delicious dish</span>
-                    <span class="menu__content-price">$12.00</span>
-                    <a class="menu__button button-primary" href="#">
+                <div class="relative flex flex-col bg-container py-5 px-3 rounded-lg drop-shadow-4xl">
+                    <img class="w-[100px] self-center mb-4" src="./assets/img/plate2.png" alt="Menu Image">
+                    <h3 class="text-title font-bold">Salad with fish</h3>
+                    <span class="fs-sm mb-2">Delicious dish</span>
+                    <span class="text-title fs-sm font-bold">$12.00</span>
+                    <a class="btn btn-prime absolute bottom-0 right-0 py-[0.45rem] px-[0.85rem] rounded-tr-none rounded-bl-none" href="#">
                         <i class="ri-shopping-cart-line"></i>
                     </a>
                 </div>
                 <!-- Menu Content - 3 -->
-                <div class="menu__content">
-                    <img class="menu__content-img" src="./assets/img/plate3.png" alt="Menu Image">
-                    <h3 class="menu__content-name">Spinach salad</h3>
-                    <span class="menu__content-details">Delicious dish</span>
-                    <span class="menu__content-price">$9.50</span>
-                    <a class="menu__button button-primary" href="#">
+                <div class="relative flex flex-col bg-container py-5 px-3 rounded-lg drop-shadow-4xl">
+                    <img class="w-[100px] self-center mb-4" src="./assets/img/plate3.png" alt="Menu Image">
+                    <h3 class="text-title font-bold">Spinach salad</h3>
+                    <span class="fs-sm mb-2">Delicious dish</span>
+                    <span class="text-title fs-sm font-bold">$9.50</span>
+                    <a class="btn btn-prime absolute bottom-0 right-0 py-[0.45rem] px-[0.85rem] rounded-tr-none rounded-bl-none" href="#">
                         <i class="ri-shopping-cart-line"></i>
                     </a>
                 </div>
@@ -400,24 +400,24 @@
         <!-- End Menu Section -->
 
         <!-- Start App Section -->
-        <section class="app section" id="app">
-            <div class="app__container container grid">
-                <div class="app__data">
-                    <span class="section__subtitle">App</span>
-                    <h2 class="section__title">App is aviable</h2>
-                    <p class="app__description description">
+        <section class="section" id="app">
+            <div class="container grid gap-y-6">
+                <div class="text-center">
+                    <span class="section-subtitle">App</span>
+                    <h2 class="section-title">App is aviable</h2>
+                    <p class="description mb-8">
                         Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.
                     </p>
-                    <div class="app__store">
+                    <div class="flex justify-center gap-x-2 mb-8">
                         <a href="#">
-                            <img src="./assets/img/app1.png" alt="App Store Image">
+                            <img class="w-[140px]" src="./assets/img/app1.png" alt="App Store Image">
                         </a>
                         <a href="#">
-                            <img src="./assets/img/app2.png" alt="App Store Image">
+                            <img class="w-[140px]" src="./assets/img/app2.png" alt="App Store Image">
                         </a>
                     </div>
                 </div>
-                <img class="app__img" src="./assets/img/movil-app.png" alt="App Image">
+                <img class="w-[230px] justify-self-center" src="./assets/img/movil-app.png" alt="App Image">
             </div>
         </section>
         <!-- End App Section -->
