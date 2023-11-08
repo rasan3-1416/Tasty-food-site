@@ -3,9 +3,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 
-// Typography Breakpoint
-const typoBg = '@media(min-width: 768px)'
-
 module.exports = {
   content: [
     "./index.html"
