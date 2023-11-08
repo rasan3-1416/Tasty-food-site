@@ -50,10 +50,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-        sm: '1.5rem',
-        md: '1.5rem',
-        lg: '2rem',
+        DEFAULT: '1.5rem',
       },
       screens: {
         sm: '576px',
@@ -122,11 +119,9 @@ module.exports = {
       })
     }),
     plugin(function({ addVariant }) {
-      addVariant("show-menu", ".show-menu&")
-      addVariant("scroll-header", ".scroll-header&")
-      addVariant("active-section", ".active-section&")
-      addVariant("show-scroll", ".show-scroll&")
+      addVariant("dynamic-style", ".dynamic-style&")
     })
+
   ],
 }
 

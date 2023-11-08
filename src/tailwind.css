@@ -24,7 +24,7 @@
 @layer components {
     /* Reusable Classes */
     .section {
-        @apply pt-[4rem] sm:pt-[pt-6rem] pb-[2rem] sm:pb-[3.5rem];
+        @apply pt-[4rem] sm:pt-[pt-6rem] lg:pt-[7.5rem] pb-[2rem] sm:pb-[3.5rem] lg:pb-[4rem];
     }
     .section-title {
         @apply fs-2xl font-bold text-title text-center mb-6 sm:mb-8;
@@ -42,4 +42,12 @@
     .btn-prime {
         @apply text-white bg-first hover:bg-first-alt;
     }
+}
+
+/* Dark Theme Color Variable */
+body.dark-theme {
+    --title-color: #F1F3F2;
+    --prime-color: #C7D1CC;
+    --body-color: #1D2521;
+    --container-color: #27302C;
 }

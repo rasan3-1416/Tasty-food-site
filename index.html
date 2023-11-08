@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
 <body class="font-body fs-normal bg-body text-prime leading-[1.6]">
-    <header class="fixed inset-x-0 w-full bg-body z-fixed ease-in-out scroll-header:shadow-4xl" id="header">
+    <header class="fixed inset-x-0 w-full bg-body z-fixed ease-in-out dynamic-style:shadow-4xl" id="header">
         <nav class="container h-header flex justify-between items-center">
             <a class="text-prime font-medium trans-ease hover:text-first" href="#">Tasty</a>
-            <div class="fixed -top-full show-menu:top-[3rem] left-0 w-full bg-body pt-[1.5rem] pb-[1rem] rounded-b-2xl shadow-3xl trans-ease md:block" id="nav-menu">
+            <div class="fixed -top-full dynamic-style:top-[3rem] left-0 w-full bg-body pt-[1.5rem] pb-[1rem] rounded-b-2xl shadow-3xl trans-ease md:block" id="nav-menu">
                 <ul class="relative grid gap-y-4 justify-center pb-6">
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first active-section" href="#home">Home</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#about">About</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#services">Services</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#menu">Menu</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#app">App</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#contact">Contact</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first active-section" href="#home">Home</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#about">About</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#services">Services</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#menu">Menu</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#app">App</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#contact">Contact</a></li>
                 </ul>
                 <button class="absolute top-4 right-4 fs-md text-prime" id="theme-button">
                     <i class="ri-moon-line" id="theme-button-icon"></i>
@@ -36,24 +36,24 @@
     <!-- Start Main Section -->
     <main class="overflow-hidden">
         <!-- Start Home Section -->
-        <section class="home section" id="home">
-            <div class="container pt-6 grid gap-y-6">
+        <section class="section" id="home">
+            <div class="container pt-6 grid gap-6 md:grid-cols-2 md:pt-[2rem]">
                 <div class="home__data">
                     <h1 class="fs-3xl font-semibold text-first mb-2">Tasty food</h1>
                     <h2 class="fs-2xl text-title font-semibold mb-8">Try the best food of <br>the week.</h2>
                     <a class="btn btn-prime" href="#">View Menu</a>
                 </div>
-                <img class="w-[300px] justify-self-center" src="./assets/img/home.png" alt="Home Image">
+                <img class="w-[300px] sm:w-[380px] justify-self-center" src="./assets/img/home.png" alt="Home Image">
             </div>
         </section>
         <!-- End Home Section -->
 
         <!-- Start About Section -->
         <section class="section" id="about">
-            <div class="container grid gap-y-6">
-                <div class="text-center">
-                    <span class="section-subtitle">About US</span>
-                    <h2 class="section-title">
+            <div class="container grid gap-6 md:grid-cols-2 md:items-center">
+                <div class="text-center md:text-start">
+                    <span class="section-subtitle md:text-start">About US</span>
+                    <h2 class="section-title md:text-start">
                         We cook the best <br>tasty food
                     </h2>
                     <p class="description mb-6">
@@ -61,7 +61,7 @@
                     </p>
                     <a class="btn btn-prime" href="#">Explore History</a>
                 </div>
-                <img class="w-[280px] justify-self-center rounded-lg" src="./assets/img/about.jpg" alt="About Iamge">
+                <img class="w-[280px] sm:w-[380px] justify-self-center md:justify-self-start rounded-lg md:-order-1" src="./assets/img/about.jpg" alt="About Iamge">
             </div>
         </section>
         <!-- End About Section -->
@@ -70,7 +70,7 @@
         <section class="section" id="services">
             <span class="section-subtitle">Offering</span>
             <h2 class="section-title">Our amazing services</h2>
-            <div class="container pt-6 grid gap-y-12">
+            <div class="container pt-6 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Services - 1 -->
                 <div class="text-center">
                     <svg class="w-[68px] h-[68px] fill-first mb-6 inline-block" xmlns="http://www.w3.org/2000/svg">
@@ -364,7 +364,7 @@
         <section class="section" id="menu">
             <span class="section-subtitle">Special</span>
             <h2 class="section-title">Menu of the week</h2>
-            <div class="container grid grid-cols-2 justify-center gap-6">
+            <div class="container grid grid-cols-2 xm:grid-cols-1 md:grid-cols-3 justify-center gap-6">
                 <!-- Menu Content - 1 -->
                 <div class="relative flex flex-col bg-container py-5 px-3 rounded-lg drop-shadow-4xl">
                     <img class="w-[100px] self-center mb-4" src="./assets/img/plate1.png" alt="Menu Image">
@@ -401,14 +401,14 @@
 
         <!-- Start App Section -->
         <section class="section" id="app">
-            <div class="container grid gap-y-6">
-                <div class="text-center">
-                    <span class="section-subtitle">App</span>
-                    <h2 class="section-title">App is aviable</h2>
+            <div class="container grid gap-6 md:grid-cols-2">
+                <div class="text-center md:text-start">
+                    <span class="section-subtitle md:text-start">App</span>
+                    <h2 class="section-title md:text-start">App is aviable</h2>
                     <p class="description mb-8">
                         Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.
                     </p>
-                    <div class="flex justify-center gap-x-2 mb-8">
+                    <div class="flex justify-center md:justify-start gap-x-2 mb-8">
                         <a href="#">
                             <img class="w-[140px]" src="./assets/img/app1.png" alt="App Store Image">
                         </a>
@@ -417,22 +417,22 @@
                         </a>
                     </div>
                 </div>
-                <img class="w-[230px] justify-self-center" src="./assets/img/movil-app.png" alt="App Image">
+                <img class="w-[230px] md:w-[380px] justify-self-center md:justify-self-end" src="./assets/img/movil-app.png" alt="App Image">
             </div>
         </section>
         <!-- End App Section -->
 
         <!-- Start Contact Section -->
         <section class="section" id="contact">
-            <div class="container grid gap-y-10">
-                <div class="text-center">
-                    <span class="section-subtitle">Let's talk</span>
-                    <h2 class="section-title">Contact us</h2>
+            <div class="container grid gap-10 md:grid-cols-2 md:items-center">
+                <div class="text-center md:text-start">
+                    <span class="section-subtitle md:text-start">Let's talk</span>
+                    <h2 class="section-title md:text-start">Contact us</h2>
                     <p class="description">
                         If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.
                     </p>
                 </div>
-                <div class="flex justify-center">
+                <div class="flex justify-center md:flex-col md:items-end">
                     <a class="btn btn-prime" href="#">Contact Us Now</a>
                 </div>
             </div>
@@ -443,7 +443,7 @@
 
     <!-- Start Footer Section -->
     <footer class="section" id="footer">
-        <div class="container grid grid-cols-1 gap-y-8">
+        <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
             <!-- Footer Content - 1 -->
             <div class="footet__content">
                 <a class="fs-xl font-semibold text-first" href="#">Tasty</a>
@@ -507,12 +507,12 @@
                 </ul>
             </div>
         </div>
-        <span class="block text-center fs-sm pt-14">&#8471; 2020. All right reserved</span>
+        <span class="block text-center fs-sm pt-14 md:pt-20">&#8471; 2020. All right reserved</span>
     </footer>
     <!-- End Footer Section -->
 
     <!-- Start Scroll UP -->
-    <a class="fixed -bottom-full show-scroll:bottom-6 right-6 px-2 py-1 bg-first rounded-lg opacity-50 trans-ease hover:opacity-100" href="#" id="scroll-up">
+    <a class="fixed -bottom-full dynamic-style:bottom-6 right-6 px-2 py-1 bg-first rounded-lg opacity-50 trans-ease hover:opacity-100" href="#" id="scroll-up">
         <i class="ri-arrow-up-line text-[1rem] text-body"></i>
     </a>
     <!-- End Scroll UP -->

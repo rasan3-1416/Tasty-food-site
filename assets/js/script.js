@@ -3,7 +3,7 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle')
 
 function navToggleAction() {
-    navMenu.classList.toggle('show-menu')
+    navMenu.classList.toggle('dynamic-style')
 }
 
 navToggle.addEventListener('click', navToggleAction)
@@ -19,9 +19,9 @@ const header = document.getElementById('header')
 
 function scrollAction() {
     if(this.scrollY >= 50) {
-        header.classList.add('scroll-header')
+        header.classList.add('dynamic-style')
     }else {
-        header.classList.remove('scroll-header')
+        header.classList.remove('dynamic-style')
     }
 }
 
@@ -40,9 +40,9 @@ function scrollActiveSection() {
               scrolledSection = document.querySelector(`#nav-menu a[href*= ${sectionId}]`)
 
         if(scrollAmountY > sectionTop && scrollAmountY <= sectionTop + sectionHeight) {
-            scrolledSection.classList.add('active-section')
+            scrolledSection.classList.add('dynamic-style')
         }else {
-            scrolledSection.classList.remove('active-section')
+            scrolledSection.classList.remove('dynamic-style')
         }
     })
 }
@@ -50,45 +50,45 @@ function scrollActiveSection() {
 window.addEventListener('scroll', scrollActiveSection)
 
 // // Background Theme Feature
-// const themeButton = document.getElementById('theme-button'),
-//       themeButtonIcon = document.getElementById('theme-button-icon'),
-//       darkTheme = 'dark-theme',
-//       iconTheme = 'ri-sun-line'
+const themeButton = document.getElementById('theme-button'),
+      themeButtonIcon = document.getElementById('theme-button-icon'),
+      darkTheme = 'dark-theme',
+      iconTheme = 'ri-sun-line'
 
 //     // Prevously selected theme and icon (If user selected)
-// const selectedTheme = localStorage.getItem('selected-theme'),
-//       selectedIcon = localStorage.getItem('selected-icon')
+const selectedTheme = localStorage.getItem('selected-theme'),
+      selectedIcon = localStorage.getItem('selected-icon')
 
 //     // We select the current theme that the interface has by validating the dark theme
-// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-// const getCurrentIcon = () => themeButtonIcon.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButtonIcon.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
 
     // We validate if the user choose a topic
-// if(selectedTheme) {
-//     // If validation is full filled, we ask what the issue was to know if we activated or deactivated the dark
-//     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-//     themeButtonIcon.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
-// }
+if(selectedTheme) {
+    // If validation is full filled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButtonIcon.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+}
 
     // Active or Deactive the theme button manually on button click
-// themeButton.addEventListener('click', () => {
-//     // Add or remove dark/icon theme
-//     document.body.classList.toggle(darkTheme)
-//     themeButtonIcon.classList.toggle(iconTheme)
+themeButton.addEventListener('click', () => {
+    // Add or remove dark/icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButtonIcon.classList.toggle(iconTheme)
 
 //     // We select and store the current theme and icon that the user have chosen
-//     localStorage.setItem('selected-theme', getCurrentTheme())
-//     localStorage.setItem('selected-icon', getCurrentIcon())
-// })
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
 
 // Scroll UP Feature
 const scrollUpButton = document.getElementById('scroll-up')
 
 function scrollUpAction() {
     if(this.scrollY > 350) {
-        scrollUpButton.classList.add('show-scroll')
+        scrollUpButton.classList.add('dynamic-style')
     }else {
-        scrollUpButton.classList.remove('show-scroll')
+        scrollUpButton.classList.remove('dynamic-style')
     }
 }
 
