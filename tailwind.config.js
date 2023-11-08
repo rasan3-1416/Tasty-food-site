@@ -80,7 +80,7 @@ module.exports = {
         },
         '.fs-xl': {
           fontSize: '1.25rem',
-          '@media (min-width: 768px': {
+          '@media (min-width: 768px)': {
             fontSize: '1.5rem',
           }
         },
@@ -111,7 +111,7 @@ module.exports = {
         // Custom Height
         '.h-header': {
           height: 'var(--header-height)',
-          '@media (min-width:768px)': {
+          '@media (min-width: 768px)': {
             height: 'calc(var(--header-height) + 1.5rem)',
           }
         },
