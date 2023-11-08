@@ -1137,6 +1137,14 @@ body.dark-theme {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-8 {
+    bottom: 2rem;
+  }
+
+  .md\:right-8 {
+    right: 2rem;
+  }
+
   .md\:-order-1 {
     order: -1;
   }
@@ -1195,6 +1203,10 @@ body.dark-theme {
 
   .md\:text-start {
     text-align: start;
+  }
+
+  .dynamic-style.dynamic-style\:md\:bottom-8 {
+    bottom: 2rem;
   }
 }
 
