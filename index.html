@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +9,26 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
     <!-- CSS Style Shit -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav container">
-            <a class="nav__logo" href="#">Tasty</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__list-item">
-                        <a class="nav__list-link active-section" href="#home">Home</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#about">About</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#app">App</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#contact">Contact</a>
-                    </li>
+    <header class="fixed inset-x-0 w-full bg-body z-fixed ease-in-out" id="header">
+        <nav class="container h-header flex justify-between items-center">
+            <a class="text-prime font-medium ease-trans-in hover:text-first" href="#">Tasty</a>
+            <div class="fixed -top-full show-menu:top-[3rem] left-0 w-full bg-body pt-[1.5rem] pb-[1rem] rounded-b-2xl trans-ease md:block" id="nav-menu">
+                <ul class="relative grid gap-y-4 justify-center pb-6">
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section" href="#home">Home</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#about">About</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#services">Services</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#menu">Menu</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#app">App</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#contact">Contact</a></li>
                 </ul>
-                <button class="theme__button" id="theme-button">
+                <button class="absolute top-4 right-4 fs-md text-prime" id="theme-button">
                     <i class="ri-moon-line" id="theme-button-icon"></i>
                 </button>
             </div>
-            <button class="nav__toggle" id="nav-toggle">
+            <button class="fs-md text-prime" id="nav-toggle">
                 <i class="ri-menu-line"></i>
             </button>
         </nav>

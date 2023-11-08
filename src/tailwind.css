@@ -5,20 +5,19 @@
 /* Base Stlyes */
 @layer base {
     :root {
-        --container: #ffffff,
-        --body: #fbfefd,
-        --first: #069d54,
-        --first-alt: #048654,
-        --title: #383838,
-        --prime: #707070,
-        --prime-light: #a6a6a6,
+        /* Header Height */
+        --header-height: 3rem;
+        /* Color Variable for Default Theme */
+        --container-color: #ffffff;
+        --body-color: #fbfefd;
+        --first-color: #069d54;
+        --first-alt-color: #048654;
+        --title-color: #383838;
+        --prime-color: #707070;
+        --prime-light-color: #a6a6a6;
     }
-    html {
-        @apply font-body;
+    #nav-menu {
+        box-shadow: 0 4px 4px hsla(0, 100%, 0%, 0.1);
     }
-    body {
-        
-    }
-
 }
 

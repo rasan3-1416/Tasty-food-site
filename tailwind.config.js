@@ -17,6 +17,11 @@ module.exports = {
       fontFamily: {
         body: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
+      // Custom Index Value
+      zIndex: {
+        'tooltip': 10,
+        'fixed': 100,
+      }
     },
     fontWeight: {
       'normal': '400',
@@ -34,28 +39,28 @@ module.exports = {
     colors: {
       // Color Palette
       'transparent': 'transparent',
-      'container': 'var(--container)',
-      'body': 'var(--body)',
-      'first': 'var(--first)',
-      'first-alt': 'var(--first-alt)',
-      'title': 'var(--title)',
-      'prime': '(--prime)',
-      'prime-light': '(prime-light)',
+      'container': 'var(--container-color)',
+      'body': 'var(--body-color)',
+      'first': 'var(--first-color)',
+      'first-alt': 'var(--first-alt-color)',
+      'title': 'var(--title-color)',
+      'prime': '(--prime-color)',
+      'prime-light': '(prime-light-color)',
     },
     container: {
       center: true,
       padding: {
-        sm: '1rem',
+        DEFAULT: '1rem',
+        sm: '1.5rem',
         md: '1.5rem',
         lg: '2rem',
       },
       screens: {
-        xm: '320px',
         sm: '576px',
         md: '768px',
         lg: '960px',
       }
-    }
+    },
   },
   plugins: [
     // Custom Responsive Font Sizes
@@ -103,7 +108,21 @@ module.exports = {
             fontSize: '0.813rem',
           }
         },
+        // Custom Height
+        '.h-header': {
+          height: 'var(--header-height)',
+          '@media (min-width:768px)': {
+            height: 'calc(var(--header-height) + 1.5rem)',
+          }
+        },
+        // Custom Trasition
+        '.trans-ease': {
+          transition: '0.3s',
+        }
       })
+    }),
+    plugin(function({ addVariant }) {
+      addVariant("show-menu", ".show-menu&");
     })
   ],
 }
