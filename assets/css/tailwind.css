@@ -445,6 +445,8 @@ video {
   --title-color: #383838;
   --prime-color: #707070;
   --prime-light-color: #a6a6a6;
+  --white-color: #ffffff;
+  --dark-color: #000000;
 }
 
 #nav-menu {
@@ -583,6 +585,91 @@ video {
   }
 }
 
+/* Reusable Classes */
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+  .section {
+    padding-top: pt-6rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--title-color);
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .section-title {
+    margin-bottom: 2rem;
+  }
+}
+
+.section-subtitle {
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.description {
+  font-weight: 500;
+  font-size: 0.938rem;
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1rem;
+  }
+}
+
+/* Btn styles */
+
+.btn {
+  display: inline-flex;
+  border-radius: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+  font-size: 0.938rem;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+.btn {
+  transition: 0.3s;
+}
+
+.btn-prime {
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+
+.btn-prime:hover {
+  background-color: var(--first-alt-color);
+}
+
 .fixed {
   position: fixed;
 }
@@ -620,6 +707,18 @@ video {
   z-index: 100;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -630,6 +729,14 @@ video {
 
 .grid {
   display: grid;
+}
+
+.w-\[280px\] {
+  width: 280px;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-full {
@@ -652,6 +759,26 @@ video {
   row-gap: 1rem;
 }
 
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-b-2xl {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -669,20 +796,68 @@ video {
   padding-bottom: 1rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .pt-\[1\.5rem\] {
   padding-top: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-body {
+  font-family: Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-medium {
   font-weight: 500;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-\[1\.6\] {
+  line-height: 1.6;
+}
+
+.text-first {
+  color: var(--first-color);
+}
+
 .text-prime {
-  color: (--prime-color);
+  color: var(--prime-color);
+}
+
+.text-title {
+  color: var(--title-color);
 }
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fs-3xl {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .fs-3xl {
+    font-size: 4rem;
+  }
+}
+
+.fs-2xl {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .fs-2xl {
+    font-size: 2.25rem;
+  }
 }
 
 .fs-md {
@@ -692,6 +867,16 @@ video {
 @media (min-width: 768px) {
   .fs-md {
     font-size: 1.25rem;
+  }
+}
+
+.fs-normal {
+  font-size: 0.938rem;
+}
+
+@media (min-width: 768px) {
+  .fs-normal {
+    font-size: 1rem;
   }
 }
 
@@ -711,6 +896,8 @@ video {
 
 /* Base Stlyes */
 
+/* Components Syles */
+
 .hover\:text-first:hover {
   color: var(--first-color);
 }
@@ -724,4 +911,3 @@ video {
     display: block;
   }
 }
-

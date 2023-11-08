@@ -15,9 +15,34 @@
         --title-color: #383838;
         --prime-color: #707070;
         --prime-light-color: #a6a6a6;
+        --white-color: #ffffff;
+        --dark-color: #000000;
     }
     #nav-menu {
         box-shadow: 0 4px 4px hsla(0, 100%, 0%, 0.1);
     }
 }
 
+/* Components Syles */
+@layer components {
+    /* Reusable Classes */
+    .section {
+        @apply pt-[4rem] sm:pt-[pt-6rem] pb-[2rem] sm:pb-[3.5rem];
+    }
+    .section-title {
+        @apply fs-2xl font-bold text-title text-center mb-6 sm:mb-8;
+    }
+    .section-subtitle {
+        @apply block text-first font-medium text-center mb-2;
+    }
+    .description {
+        @apply fs-normal font-medium;
+    }
+    /* Btn styles */
+    .btn {
+        @apply inline-flex fs-normal font-medium px-5 py-3 rounded-lg trans-ease;
+    }
+    .btn-prime {
+        @apply text-white bg-first hover:bg-first-alt;
+    }
+}

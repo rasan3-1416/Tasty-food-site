@@ -21,13 +21,9 @@ module.exports = {
       zIndex: {
         'tooltip': 10,
         'fixed': 100,
-      }
+      },
     },
-    fontWeight: {
-      'normal': '400',
-      'medium': '500',
-      'semi-bold': '600',
-    },
+    
     screens: {
       // Customzied Breakpoints
       'xm': {'max': '320px'},
@@ -44,8 +40,10 @@ module.exports = {
       'first': 'var(--first-color)',
       'first-alt': 'var(--first-alt-color)',
       'title': 'var(--title-color)',
-      'prime': '(--prime-color)',
-      'prime-light': '(prime-light-color)',
+      'prime': 'var(--prime-color)',
+      'prime-light': 'var(prime-light-color)',
+      'white': 'var(--white-color)',
+      'dark': 'var(--dark-color)',
     },
     container: {
       center: true,

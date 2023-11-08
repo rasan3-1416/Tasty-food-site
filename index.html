@@ -7,11 +7,11 @@
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
     <!-- CSS Style Shit -->
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
-<body>
+<body class="font-body fs-normal bg-body text-prime leading-[1.6]">
     <header class="fixed inset-x-0 w-full bg-body z-fixed ease-in-out" id="header">
         <nav class="container h-header flex justify-between items-center">
             <a class="text-prime font-medium ease-trans-in hover:text-first" href="#">Tasty</a>
@@ -34,34 +34,34 @@
         </nav>
     </header>
     <!-- Start Main Section -->
-    <main class="main">
+    <main class="overflow-hidden">
         <!-- Start Home Section -->
         <section class="home section" id="home">
-            <div class="home__container container grid">
+            <div class="container pt-6 grid gap-y-6">
                 <div class="home__data">
-                    <h1 class="home__title">Tasty food</h1>
-                    <h2 class="home__subtitle">Try the best food of <br>the week.</h2>
-                    <a class="button-primary" href="#">View Menu</a>
+                    <h1 class="fs-3xl font-semibold text-first mb-2">Tasty food</h1>
+                    <h2 class="fs-2xl text-title font-semibold mb-8">Try the best food of <br>the week.</h2>
+                    <a class="btn btn-prime" href="#">View Menu</a>
                 </div>
-                <img class="home__img" src="./assets/img/home.png" alt="Home Image">
+                <img class="w-[300px] justify-self-center" src="./assets/img/home.png" alt="Home Image">
             </div>
         </section>
         <!-- End Home Section -->
 
         <!-- Start About Section -->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <div class="about__data">
-                    <span class="section__subtitle">About US</span>
-                    <h2 class="section__title">
+        <section class="section" id="about">
+            <div class="container grid gap-y-6">
+                <div class="text-center">
+                    <span class="section-subtitle">About US</span>
+                    <h2 class="section-title">
                         We cook the best <br>tasty food
                     </h2>
-                    <p class="about__description description">
+                    <p class="description mb-6">
                         We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.
                     </p>
-                    <a class="button-primary" href="#">Explore History</a>
+                    <a class="btn btn-prime" href="#">Explore History</a>
                 </div>
-                <img class="about__img" src="./assets/img/about.jpg" alt="About Iamge">
+                <img class="w-[280px] justify-self-center rounded-lg" src="./assets/img/about.jpg" alt="About Iamge">
             </div>
         </section>
         <!-- End About Section -->
