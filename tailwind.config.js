@@ -15,7 +15,7 @@ module.exports = {
         body: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
       // Custom Shadow
-      dropShadow: {
+      boxShadow: {
         '3xl': '0 4px 4px hsla(0, 100%, 0%, 0.1)',
         '4xl': '0 4px 7px hsla(0, 100%, 0%, 0.1)',
       },
@@ -122,7 +122,10 @@ module.exports = {
       })
     }),
     plugin(function({ addVariant }) {
-      addVariant("show-menu", ".show-menu&");
+      addVariant("show-menu", ".show-menu&")
+      addVariant("scroll-header", ".scroll-header&")
+      addVariant("active-section", ".active-section&")
+      addVariant("show-scroll", ".show-scroll&")
     })
   ],
 }

@@ -15,39 +15,39 @@ navLink.forEach(currentButton => {
 })
 
 // Add Style to Header On Scroll Feature
-// const header = document.querySelector('#header')
+const header = document.getElementById('header')
 
-// function scrollAction() {
-//     if(this.scrollY >= 50) {
-//         header.classList.add('scroll-header')
-//     }else {
-//         header.classList.remove('scroll-header')
-//     }
-// }
+function scrollAction() {
+    if(this.scrollY >= 50) {
+        header.classList.add('scroll-header')
+    }else {
+        header.classList.remove('scroll-header')
+    }
+}
 
-// window.addEventListener('scroll', scrollAction)
+window.addEventListener('scroll', scrollAction)
 
 // // Scroll Active Section High lighter Feature
-// const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]')
 
-// function scrollActiveSection() {
-//     const scrollAmountY = window.scrollY
+function scrollActiveSection() {
+    const scrollAmountY = window.scrollY
 
-//     sections.forEach(currentSection => {
-//         const sectionHeight = currentSection.offsetHeight,
-//               sectionTop = currentSection.offsetTop - 50,
-//               sectionId = currentSection.getAttribute('id'),
-//               scrolledSection = document.querySelector(`.nav__menu a[href*= ${sectionId}]`)
+    sections.forEach(currentSection => {
+        const sectionHeight = currentSection.offsetHeight,
+              sectionTop = currentSection.offsetTop - 50,
+              sectionId = currentSection.getAttribute('id'),
+              scrolledSection = document.querySelector(`#nav-menu a[href*= ${sectionId}]`)
 
-//         if(scrollAmountY > sectionTop && scrollAmountY <= sectionTop + sectionHeight) {
-//             scrolledSection.classList.add('active-section')
-//         }else {
-//             scrolledSection.classList.remove('active-section')
-//         }
-//     })
-// }
+        if(scrollAmountY > sectionTop && scrollAmountY <= sectionTop + sectionHeight) {
+            scrolledSection.classList.add('active-section')
+        }else {
+            scrolledSection.classList.remove('active-section')
+        }
+    })
+}
 
-// window.addEventListener('scroll', scrollActiveSection)
+window.addEventListener('scroll', scrollActiveSection)
 
 // // Background Theme Feature
 // const themeButton = document.getElementById('theme-button'),
@@ -81,15 +81,15 @@ navLink.forEach(currentButton => {
 //     localStorage.setItem('selected-icon', getCurrentIcon())
 // })
 
-//Scroll UP Feature
-// const scrollUpButton = document.getElementById('scroll-up')
+// Scroll UP Feature
+const scrollUpButton = document.getElementById('scroll-up')
 
-// function scrollUpAction() {
-//     if(this.scrollY > 350) {
-//         scrollUpButton.classList.add('show-scroll')
-//     }else {
-//         scrollUpButton.classList.remove('show-scroll')
-//     }
-// }
+function scrollUpAction() {
+    if(this.scrollY > 350) {
+        scrollUpButton.classList.add('show-scroll')
+    }else {
+        scrollUpButton.classList.remove('show-scroll')
+    }
+}
 
-// window.addEventListener('scroll', scrollUpAction)
+window.addEventListener('scroll', scrollUpAction)

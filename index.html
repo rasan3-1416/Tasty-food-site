@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html class="!scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
 <body class="font-body fs-normal bg-body text-prime leading-[1.6]">
-    <header class="fixed inset-x-0 w-full bg-body z-fixed ease-in-out" id="header">
+    <header class="fixed inset-x-0 w-full bg-body z-fixed ease-in-out scroll-header:shadow-4xl" id="header">
         <nav class="container h-header flex justify-between items-center">
-            <a class="text-prime font-medium ease-trans-in hover:text-first" href="#">Tasty</a>
-            <div class="fixed -top-full show-menu:top-[3rem] left-0 w-full bg-body pt-[1.5rem] pb-[1rem] rounded-b-2xl drop-shadow-3xl trans-ease md:block" id="nav-menu">
+            <a class="text-prime font-medium trans-ease hover:text-first" href="#">Tasty</a>
+            <div class="fixed -top-full show-menu:top-[3rem] left-0 w-full bg-body pt-[1.5rem] pb-[1rem] rounded-b-2xl shadow-3xl trans-ease md:block" id="nav-menu">
                 <ul class="relative grid gap-y-4 justify-center pb-6">
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section" href="#home">Home</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#about">About</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#services">Services</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#menu">Menu</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#app">App</a></li>
-                    <li><a class="text-prime font-medium ease-trans-in hover:text-first" href="#contact">Contact</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first active-section" href="#home">Home</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#about">About</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#services">Services</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#menu">Menu</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#app">App</a></li>
+                    <li><a class="text-prime font-medium ease-trans-in hover:text-first active-section:text-first" href="#contact">Contact</a></li>
                 </ul>
                 <button class="absolute top-4 right-4 fs-md text-prime" id="theme-button">
                     <i class="ri-moon-line" id="theme-button-icon"></i>
@@ -512,8 +512,8 @@
     <!-- End Footer Section -->
 
     <!-- Start Scroll UP -->
-    <a class="scroll__up hidden" href="#" id="scroll-up">
-        <i class="ri-arrow-up-line"></i>
+    <a class="fixed -bottom-full show-scroll:bottom-6 right-6 px-2 py-1 bg-first rounded-lg opacity-50 trans-ease hover:opacity-100" href="#" id="scroll-up">
+        <i class="ri-arrow-up-line text-[1rem] text-body"></i>
     </a>
     <!-- End Scroll UP -->
 
