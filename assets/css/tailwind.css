@@ -876,6 +876,10 @@ video {
        column-gap: 1rem;
 }
 
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .self-center {
   align-self: center;
 }
@@ -1274,6 +1278,16 @@ body.dark-theme {
 
   .md\:gap-12 {
     gap: 3rem;
+  }
+
+  .md\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+
+  .md\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 
   .md\:justify-self-start {
