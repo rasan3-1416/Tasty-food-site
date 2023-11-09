@@ -1,0 +1,11 @@
+This site will be a fully functional website with the following functionality in near future.
+There user type of this website will be
+Admin - An admin will have all access of information of this site like for the control of the main dash board where he can see the stock groceary amount and the sells report for daily weekly monthly and yearly
+Manager - A manager will have access to the groceary limit only where he can check it's limit and report the manager directly
+cheif - He will prepare the order and can notify the delivery man to recive it
+delivery man - he will recive the order the deliver it to the customer while this procedure the customer can see the location of the delivery man throught google map and the delivery man notify the delivery is done after completing the task
+customer - a customer can order from the follwing menu and after reciving an order then only the customer can give a review about that specific order
+
+The user can log in to the site and log out 
+there will be a blog section where the user can post about there recipe and other user can give a like and weekly a winner will be selected for the best recipe and be shown to the leader board
+
