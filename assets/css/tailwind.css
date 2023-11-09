@@ -553,15 +553,13 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 576px) {
   .container {
     max-width: 576px;
-    padding-right: 1rem;
-    padding-left: 1rem;
   }
 }
 
@@ -706,20 +704,16 @@ video {
   right: 0px;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .right-6 {
   right: 1.5rem;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.right-2 {
-  right: 0.5rem;
 }
 
 .z-fixed {
@@ -798,30 +792,6 @@ video {
   width: 100%;
 }
 
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[7\] {
-  max-width: 7;
-}
-
-.max-w-\[76\] {
-  max-width: 76;
-}
-
-.max-w-\[768\] {
-  max-width: 768;
-}
-
-.max-w-\[768p\] {
-  max-width: 768p;
-}
-
-.max-w-\[768px\] {
-  max-width: 768px;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -852,10 +822,6 @@ video {
 
 .gap-12 {
   gap: 3rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-6 {
@@ -929,6 +895,11 @@ video {
   fill: var(--first-color);
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -959,17 +930,12 @@ video {
   padding-bottom: 0.45rem;
 }
 
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pb-6 {
   padding-bottom: 1.5rem;
-}
-
-.pb-\[1rem\] {
-  padding-bottom: 1rem;
 }
 
 .pt-14 {
@@ -978,14 +944,6 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pt-\[1\.5rem\] {
-  padding-top: 1.5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -1192,42 +1150,6 @@ body.dark-theme {
     right: 2rem;
   }
 
-  .md\:right-0 {
-    right: 0px;
-  }
-
-  .md\:right-1 {
-    right: 0.25rem;
-  }
-
-  .md\:right-12 {
-    right: 3rem;
-  }
-
-  .md\:right-\[\] {
-    right: ;
-  }
-
-  .md\:right-\[5\] {
-    right: 5;
-  }
-
-  .md\:right-\[5\.\] {
-    right: 5.;
-  }
-
-  .md\:right-\[5\.5\] {
-    right: 5.5;
-  }
-
-  .md\:right-\[5\.5r\] {
-    right: 5.5r;
-  }
-
-  .md\:right-\[5\.5rem\] {
-    right: 5.5rem;
-  }
-
   .md\:-order-1 {
     order: -1;
   }
@@ -1256,10 +1178,6 @@ body.dark-theme {
     flex-direction: column;
   }
 
-  .md\:items-start {
-    align-items: flex-start;
-  }
-
   .md\:items-end {
     align-items: flex-end;
   }
@@ -1278,11 +1196,6 @@ body.dark-theme {
 
   .md\:gap-12 {
     gap: 3rem;
-  }
-
-  .md\:gap-x-6 {
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
   }
 
   .md\:gap-x-8 {
