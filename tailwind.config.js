@@ -50,7 +50,8 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1.5rem',
+        DEFAULT: '0.5rem',
+        sm: '1rem',
       },
       screens: {
         sm: '576px',

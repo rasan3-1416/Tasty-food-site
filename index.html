@@ -15,20 +15,22 @@
     <header class="fixed inset-x-0 w-full bg-body z-fixed ease-in-out dynamic-style:shadow-4xl" id="header">
         <nav class="container h-header flex justify-between items-center">
             <a class="text-prime font-medium trans-ease hover:text-first" href="#">Tasty</a>
-            <div class="fixed -top-full dynamic-style:top-[3rem] left-0 w-full bg-body pt-[1.5rem] pb-[1rem] rounded-b-2xl shadow-3xl trans-ease md:block" id="nav-menu">
-                <ul class="relative grid gap-y-4 justify-center pb-6">
+            <div class="fixed -top-full dynamic-style:top-[3rem] left-0 w-full bg-body pt-6 md:pt-0 pb-4 md:pb-0 rounded-b-2xl shadow-3xl md:shadow-none trans-ease md:static" id="nav-menu">
+                <ul class="container px-0 relative grid gap-4 justify-center md:justify-end pb-6 md:pb-0 md:grid-flow-col md:items-center">
                     <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first active-section" href="#home">Home</a></li>
                     <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#about">About</a></li>
                     <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#services">Services</a></li>
                     <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#menu">Menu</a></li>
                     <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#app">App</a></li>
                     <li><a class="text-prime font-medium ease-trans-in hover:text-first dynamic-style:text-first" href="#contact">Contact</a></li>
+                    <!-- Theme Button -->
+                    <button class="absolute top-0 right-2 sm:right-4 fs-md text-prime md:static" id="theme-button">
+                        <i class="ri-moon-line" id="theme-button-icon"></i>
+                    </button>
                 </ul>
-                <button class="absolute top-4 right-4 fs-md text-prime" id="theme-button">
-                    <i class="ri-moon-line" id="theme-button-icon"></i>
-                </button>
             </div>
-            <button class="fs-md text-prime" id="nav-toggle">
+            <!-- Toggle Button -->
+            <button class="fs-md text-prime md:hidden" id="nav-toggle">
                 <i class="ri-menu-line"></i>
             </button>
         </nav>
