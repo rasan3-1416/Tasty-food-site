@@ -716,6 +716,10 @@ video {
   top: 0px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .z-fixed {
   z-index: 100;
 }
