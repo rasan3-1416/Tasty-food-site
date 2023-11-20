@@ -93,3 +93,57 @@ function scrollUpAction() {
 }
 
 window.addEventListener('scroll', scrollUpAction)
+
+
+// Reveal Content On Scroll Feature
+
+// Basic Scroll Reveal Function
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 100,
+    interval: 0,
+    reset: true,
+})
+
+// Viewport Width
+let viewportWidth = window.visualViewport.width
+
+// Scroll Reveal Function
+function srAction(element, action){
+    sr.reveal(element, action)
+}
+
+// Delay increase According to Index Function
+function delayByIndex(element,originOfAction){
+    element.forEach((element,index) => {
+        srAction(element, {origin: originOfAction || 'top', delay: 100 + (index * 400)})
+    })
+}
+
+
+// Footer reveal content
+let footerDataBlock = document.querySelectorAll('#footer-data-holder div')
+
+// Scroll reveal change on occur when viewport width is more the 768px
+if(viewportWidth > 767.99){
+    // Scroll Reveal Header/Home/About/App/Contact Section
+    srAction(header)
+    srAction('#home-data, #about-img, #app-data, #contact-data', {origin: 'left'})
+    srAction('#home-img, #about-data, #app-img, #contact-btn', {origin: 'right'})
+    delayByIndex(footerDataBlock, 'bottom')
+}else {
+    srAction('#home-data, #home-img, #about-img, #about-data, #app-data, #app-img, #contact-data, #contact-btn', {interval: 200})
+    delayByIndex(footerDataBlock, 'top')
+}
+
+// Service Section Reveal
+let serviceCard = document.querySelectorAll('#service-card-holder div')
+delayByIndex(serviceCard)
+
+// Menu Section Reveal
+let menuCard = document.querySelectorAll('#menu-card-holder div')
+delayByIndex(menuCard)
+
+

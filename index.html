@@ -40,12 +40,12 @@
         <!-- Start Home Section -->
         <section class="section" id="home">
             <div class="container pt-6 grid gap-6 md:grid-cols-2 md:pt-[2rem]">
-                <div class="home__data">
+                <div class="home__data" id="home-data">
                     <h1 class="fs-3xl font-semibold text-first mb-2">Tasty food</h1>
                     <h2 class="fs-2xl text-title font-semibold mb-8">Try the best food of <br>the week.</h2>
                     <a class="btn btn-prime" href="#">View Menu</a>
                 </div>
-                <img class="w-[300px] sm:w-[380px] justify-self-center" src="./assets/img/home.png" alt="Home Image">
+                <img class="w-[300px] sm:w-[380px] justify-self-center" src="./assets/img/home.png" alt="Home Image" id="home-img">
             </div>
         </section>
         <!-- End Home Section -->
@@ -53,7 +53,7 @@
         <!-- Start About Section -->
         <section class="section" id="about">
             <div class="container grid gap-6 md:grid-cols-2 md:items-center">
-                <div class="text-center md:text-start">
+                <div class="text-center md:text-start" id="about-data">
                     <span class="section-subtitle md:text-start">About US</span>
                     <h2 class="section-title md:text-start">
                         We cook the best <br>tasty food
@@ -63,7 +63,7 @@
                     </p>
                     <a class="btn btn-prime" href="#">Explore History</a>
                 </div>
-                <img class="w-[280px] sm:w-[380px] justify-self-center md:justify-self-start rounded-lg md:-order-1" src="./assets/img/about.jpg" alt="About Iamge">
+                <img class="w-[280px] sm:w-[380px] justify-self-center md:justify-self-start rounded-lg md:-order-1" src="./assets/img/about.jpg" alt="About Iamge" id="about-img">
             </div>
         </section>
         <!-- End About Section -->
@@ -72,7 +72,7 @@
         <section class="section" id="services">
             <span class="section-subtitle">Offering</span>
             <h2 class="section-title">Our amazing services</h2>
-            <div class="container pt-6 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+            <div class="container pt-6 grid gap-12 md:grid-cols-2 lg:grid-cols-3" id="service-card-holder">
                 <!-- Services - 1 -->
                 <div class="text-center">
                     <svg class="w-[68px] h-[68px] fill-first mb-6 inline-block" xmlns="http://www.w3.org/2000/svg">
@@ -366,7 +366,7 @@
         <section class="section" id="menu">
             <span class="section-subtitle">Special</span>
             <h2 class="section-title">Menu of the week</h2>
-            <div class="container grid grid-cols-2 xm:grid-cols-1 md:grid-cols-3 justify-center gap-6">
+            <div class="container grid grid-cols-2 xm:grid-cols-1 md:grid-cols-3 justify-center gap-6" id="menu-card-holder">
                 <!-- Menu Content - 1 -->
                 <div class="relative flex flex-col bg-container py-5 px-3 rounded-lg drop-shadow-4xl">
                     <img class="w-[100px] self-center mb-4" src="./assets/img/plate1.png" alt="Menu Image">
@@ -404,7 +404,7 @@
         <!-- Start App Section -->
         <section class="section" id="app">
             <div class="container grid gap-6 md:grid-cols-2">
-                <div class="text-center md:text-start">
+                <div class="text-center md:text-start" id="app-data">
                     <span class="section-subtitle md:text-start">App</span>
                     <h2 class="section-title md:text-start">App is aviable</h2>
                     <p class="description mb-8">
@@ -419,7 +419,7 @@
                         </a>
                     </div>
                 </div>
-                <img class="w-[230px] md:w-[380px] justify-self-center md:justify-self-end" src="./assets/img/movil-app.png" alt="App Image">
+                <img class="w-[230px] md:w-[380px] justify-self-center md:justify-self-end" src="./assets/img/movil-app.png" alt="App Image" id="app-img">
             </div>
         </section>
         <!-- End App Section -->
@@ -427,14 +427,14 @@
         <!-- Start Contact Section -->
         <section class="section" id="contact">
             <div class="container grid gap-10 md:grid-cols-2 md:items-center">
-                <div class="text-center md:text-start">
+                <div class="text-center md:text-start" id="contact-data">
                     <span class="section-subtitle md:text-start">Let's talk</span>
                     <h2 class="section-title md:text-start">Contact us</h2>
                     <p class="description">
                         If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.
                     </p>
                 </div>
-                <div class="flex justify-center md:flex-col md:items-end">
+                <div class="flex justify-center md:flex-col md:items-end" id="contact-btn">
                     <a class="btn btn-prime" href="#">Contact Us Now</a>
                 </div>
             </div>
@@ -445,7 +445,7 @@
 
     <!-- Start Footer Section -->
     <footer class="section" id="footer">
-        <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+        <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12" id="footer-data-holder">
             <!-- Footer Content - 1 -->
             <div class="footet__content">
                 <a class="fs-xl font-semibold text-first" href="#">Tasty</a>
@@ -519,7 +519,9 @@
     </a>
     <!-- End Scroll UP -->
 
-
+    <!-- Scroll Reveal JS -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <!-- Main Script JS -->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
