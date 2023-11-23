@@ -704,8 +704,8 @@ video {
   right: 0px;
 }
 
-.right-2 {
-  right: 0.5rem;
+.right-4 {
+  right: 1rem;
 }
 
 .right-6 {
@@ -714,10 +714,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.right-4 {
-  right: 1rem;
 }
 
 .z-fixed {
@@ -1005,6 +1001,12 @@ video {
 .shadow-3xl {
   --tw-shadow: 0 4px 4px hsla(0, 100%, 0%, 0.1);
   --tw-shadow-colored: 0 4px 4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-4xl {
+  --tw-shadow: 0 4px 7px hsla(0, 100%, 0%, 0.1);
+  --tw-shadow-colored: 0 4px 7px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
