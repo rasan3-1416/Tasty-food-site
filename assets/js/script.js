@@ -104,7 +104,7 @@ const sr = ScrollReveal({
     duration: 2500,
     delay: 100,
     interval: 0,
-    reset: true,
+    // reset: true,
 })
 
 // Viewport Width
